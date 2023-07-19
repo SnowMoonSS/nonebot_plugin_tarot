@@ -10,7 +10,7 @@ from .data_source import tarot_manager
 __tarot_version__ = "v0.4.0.post4"
 __tarot_usages__ = f'''
 塔罗牌 {__tarot_version__}
-[占卜] 随机选取牌阵进行占卜
+[塔罗牌阵] 随机选取牌阵进行占卜
 [塔罗牌] 得到单张塔罗牌回应
 [开启/启用/关闭/禁用]群聊转发 开启或关闭全局群聊转发'''.strip()
 
@@ -24,7 +24,7 @@ __plugin_meta__ = PluginMetadata(
     }
 )
 
-divine = on_command(cmd="占卜", priority=7)
+divine = on_command(cmd="塔罗牌阵", priority=7)
 tarot = on_command(cmd="塔罗牌", priority=7)
 chain_reply_switch = on_regex(
     pattern=r"^(开启|启用|关闭|禁用)群聊转发(模式)?$", permission=SUPERUSER, priority=7, block=True)
